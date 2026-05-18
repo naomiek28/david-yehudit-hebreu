@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>חתונת דוד ויהודית</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Great+Vibes&family=Frank+Ruhl+Libre:wght@500;600;700;800&family=Noto+Serif+Hebrew:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mariage.css">
+</head>
+<body class="lang-he">
+
+    <audio id="music" loop preload="auto">
+        <source src="musique-davidyeudit.mp3" type="audio/mpeg">
+    </audio>
+
+    <button class="music-button" id="musicButton" type="button">הפעלת מוזיקה</button>
+
+    <div class="language-switch">
+        <button type="button" class="lang-button active" data-lang="he">עברית</button>
+        <button type="button" class="lang-button" data-lang="fr">FR</button>
+    </div>
+
+    <main class="invitation">
+        <div class="background-blur"></div>
+
+        <div class="photo-layer">
+            <img src="backgroung-davidyeudit.jpg" alt="">
+        </div>
+
+        <section class="panel">
+            <div class="card hero-card reveal-card">
+                <div class="top-blessing reveal-item">
+                    <p class="bsd">בס״ד</p>
+                </div>
+
+                <div class="families reveal-item">
+                    <div class="family-side family-left">
+                        <p data-fr="Mr Moise Layani z&quot;l" data-he="משה ליאני ז״ל">משה ליאני ז״ל</p>
+                        <p data-fr="Mr Joel Chalom Sellem" data-he="ז׳ואל שלום סלם שיחי׳">ז׳ואל שלום סלם שיחי׳</p>
+                        <p data-fr="Mr & Mme Ephraim Sellem" data-he="אפרים ורעייתו שתחי׳">אפרים ורעייתו שתחי׳</p>
+                    </div>
+
+                    <div class="family-side family-right">
+                        <p data-fr="Mr Avraham Assis z&quot;l" data-he="אברהם אסיס ז״ל">אברהם אסיס ז״ל</p>
+                        <p data-fr="Mme Sarah Assis" data-he="שרה אסיס תחי׳">שרה אסיס תחי׳</p>
+                        <p data-fr="Mr & Mme Yaacov Halouani" data-he="יעקב חלואני שתחי׳">יעקב חלואני שתחי׳</p>
+                        <p data-fr="Mr & Mme Touvia Assis" data-he="טוביה ורעייתו אסיס שתחי׳">טוביה ורעייתו אסיס שתחי׳</p>
+                    </div>
+                </div>
+
+                <p class="small reveal-item"
+                   data-fr="Ont la joie de vous faire part du mariage de leurs petits-enfants et enfants"
+                   data-he="שמחים להזמינכם לחתונת נכדיהם וילדיהם">
+                    שמחים להזמינכם לחתונת נכדיהם וילדיהם
+                </p>
+
+                <img class="wedding-logo reveal-item" src="logo-davidyeudit.png" alt="Logo David et Yehudit">
+
+                <h1 class="names-title reveal-title">
+                    <span class="name-fr">David & Yehudit</span>
+
+                    <span class="name-he" dir="rtl">
+                        <span class="he-person">
+                            <span class="he-main-name">דוד</span>
+                            <small>נ״י</small>
+                        </span>
+
+                        <span class="he-join">&</span>
+
+                        <span class="he-person">
+                            <span class="he-main-name">יהודית</span>
+                            <small>תחי׳</small>
+                        </span>
+                    </span>
+                </h1>
+
+                <div class="countdown reveal-item">
+                    <div><strong id="days">00</strong><span>ימים</span></div>
+                    <div><strong id="hours">00</strong><span>שעות</span></div>
+                    <div><strong id="minutes">00</strong><span>דקות</span></div>
+                    <div><strong id="seconds">00</strong><span>שניות</span></div>
+                </div>
+
+                <div class="date-block reveal-item">
+                    <p data-fr="Dimanche 28 juin 2026" data-he="יום ראשון, 28 ביוני 2026">יום ראשון, 28 ביוני 2026</p>
+                    <p data-fr="13 Tamouz 5786" data-he="י״ג בתמוז תשפ״ו">י״ג בתמוז תשפ״ו</p>
+                    <p data-fr="Dans les salons de l'hotel &quot;Vert&quot;" data-he="באולמות מלון Vert">באולמות מלון Vert</p>
+                    <p data-fr="1 rue Rupin, Jerusalem" data-he="רחוב רופין 1, ירושלים">רחוב רופין 1, ירושלים</p>
+                </div>
+
+                <p class="text reveal-item"
+                   data-fr="Nous serons honores de votre presence pour partager cette grande joie."
+                   data-he="נשמח לכבד אותנו בנוכחותכם ולחלוק עמנו את השמחה הגדולה.">
+                    נשמח לכבד אותנו בנוכחותכם ולחלוק עמנו את השמחה הגדולה.
+                </p>
+
+                <p class="scroll reveal-item"
+                   data-fr="Deroulez l'invitation"
+                   data-he="גללו את ההזמנה">
+                    גללו את ההזמנה
+                </p>
+            </div>
+        </section>
+
+        <section class="panel">
+            <div class="card reveal-card">
+                <p class="small reveal-item" data-fr="La ceremonie" data-he="החופה">החופה</p>
+                <h2 class="reveal-title" data-fr="Houppa" data-he="חופה וקידושין">חופה וקידושין</h2>
+
+                <p class="text reveal-item"
+                   data-fr="Kabalat Panim a 18h30. Houppa a 19h00."
+                   data-he="קבלת פנים בשעה 18:30. חופה וקידושין בשעה 19:00.">
+                    קבלת פנים בשעה 18:30. חופה וקידושין בשעה 19:00.
+                </p>
+
+                <div class="date-block reveal-item">
+                    <p data-fr="Kabalat Panim a 18h30" data-he="קבלת פנים בשעה 18:30">קבלת פנים בשעה 18:30</p>
+                    <p data-fr="Houppa a 19h00" data-he="חופה וקידושין בשעה 19:00">חופה וקידושין בשעה 19:00</p>
+                    <p data-fr="Hotel Vert" data-he="מלון Vert">מלון Vert</p>
+                    <p data-fr="1 rue Rupin, Jerusalem" data-he="רחוב רופין 1, ירושלים">רחוב רופין 1, ירושלים</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel">
+            <div class="card reveal-card">
+                <p class="small reveal-item" data-fr="Apres la Houppa" data-he="לאחר החופה">לאחר החופה</p>
+                <h2 class="reveal-title" data-fr="Reception" data-he="סעודה">סעודה</h2>
+
+                <p class="text reveal-item"
+                   data-fr="La soiree continuera avec une reception et un diner."
+                   data-he="סעודה לאחר החופה.">
+                    סעודה לאחר החופה.
+                </p>
+
+                <div class="date-block reveal-item">
+                    <p data-fr="Dans les salons de l'hotel &quot;Vert&quot;" data-he="באולמות מלון Vert">באולמות מלון Vert</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel">
+            <div class="card reveal-card">
+                <p class="small reveal-item" data-fr="Acces a la salle" data-he="הגעה לאולם">הגעה לאולם</p>
+                <h2 class="reveal-title" data-fr="Venir au mariage" data-he="דרכי הגעה">דרכי הגעה</h2>
+
+                <p class="text reveal-item"
+                   data-fr="Hotel Vert, 1 rue Rupin, Jerusalem."
+                   data-he="מלון Vert, רחוב רופין 1, ירושלים.">
+                    מלון Vert, רחוב רופין 1, ירושלים.
+                </p>
+
+                <div class="map-buttons reveal-item">
+                    <a href="https://waze.com/ul?q=Hotel%20Vert%201%20Rupin%20Street%20Jerusalem&navigate=yes" target="_blank"
+                       data-fr="Ouvrir Waze"
+                       data-he="פתיחה ב-Waze">פתיחה ב-Waze</a>
+
+                    <a href="https://www.google.com/maps/search/?api=1&query=Hotel%20Vert%201%20Rupin%20Street%20Jerusalem" target="_blank"
+                       data-fr="Google Maps"
+                       data-he="פתיחה ב-Google Maps">פתיחה ב-Google Maps</a>
+
+                    <button type="button" id="calendarButton"
+                            data-fr="Ajouter au calendrier"
+                            data-he="הוספה ליומן">
+                        הוספה ליומן
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel" id="rsvp">
+            <div class="card rsvp-card reveal-card">
+                <p class="small reveal-item" data-fr="Reponse souhaitee" data-he="אישור הגעה">אישור הגעה</p>
+                <h2 class="reveal-title" data-fr="RSVP" data-he="אישור הגעה">אישור הגעה</h2>
+
+                <p class="text reveal-item"
+                   data-fr="Merci de confirmer votre presence afin de preparer cette celebration avec soin."
+                   data-he="נודה לכם אם תאשרו את הגעתכם כדי שנוכל להתכונן לחגיגה באהבה.">
+                    נודה לכם אם תאשרו את הגעתכם כדי שנוכל להתכונן לחגיגה באהבה.
+                </p>
+
+                <form class="rsvp-form reveal-item" id="rsvpForm">
+                    <input id="guestName" type="text" placeholder="שם מלא" required>
+
+                    <select id="guestPresence" required>
+                        <option value="אשתתף בשמחה">אשתתף בשמחה</option>
+                        <option value="אשתתף רק בחופה">אשתתף רק בחופה</option>
+                        <option value="לא אוכל להשתתף">לא אוכל להשתתף</option>
+                    </select>
+
+                    <input id="guestNumber" type="number" min="1" placeholder="מספר משתתפים" required>
+                    <textarea id="guestMessage" placeholder="הודעה או הערה"></textarea>
+
+                    <button type="submit">אישור הגעה</button>
+                </form>
+
+                <a class="rsvp-call reveal-item" href="tel:+972534623726">להתקשר</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="mariage.js"></script>
+</body>
+</html>

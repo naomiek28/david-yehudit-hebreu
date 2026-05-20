@@ -1,4 +1,4 @@
-﻿const music = document.getElementById("music");
+const music = document.getElementById("music");
 const musicButton = document.getElementById("musicButton");
 const rsvpForm = document.getElementById("rsvpForm");
 const calendarButton = document.getElementById("calendarButton");
@@ -123,7 +123,7 @@ updateCountdown();
 setInterval(updateCountdown, 1000);
 
 async function startMusic() {
-    if (!music || musicStarted) {
+    if (!music || musicStarted || !music.paused) {
         return;
     }
 
@@ -150,8 +150,13 @@ musicButton.addEventListener("click", async function () {
             musicButton.textContent = labels[currentLang].musicPlay;
         }
     } catch (error) {
+        musicStarted = false;
         musicButton.textContent = labels[currentLang].musicPlay;
     }
+});
+
+["click", "touchstart", "pointerdown", "wheel", "scroll"].forEach(function (eventName) {
+    window.addEventListener(eventName, startMusic, { once: true, passive: true });
 });
 
 ["click", "touchstart", "pointerdown", "scroll"].forEach(function (eventName) {
